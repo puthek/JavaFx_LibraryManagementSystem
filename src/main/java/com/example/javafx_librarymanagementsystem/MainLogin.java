@@ -23,15 +23,5 @@ public class MainLogin extends Application {
 
     public static void main(String[] args) {
         launch(args);
-        Scanner sc = new Scanner(System.in);
-        try {
-            System.out.println("input a number ");
-            int n1 = sc.nextInt();
-            System.out.println("INPUT A NUMBER 2");
-            int n2 = sc.nextInt();
-            System.out.println(n1 +"/" + n2 +"="+ n1/n2);
-        }catch (InputMismatchException e){
-            System.out.println("there is an error!");
-        }
     }
 }
