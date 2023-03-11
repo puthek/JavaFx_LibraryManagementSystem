@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-import java.awt.*;
+//import java.awt.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class MainLogin extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(MainLogin.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 500);
-        stage.getIcons().add(new Image("D:\\JAVAFX Project\\image\\cadtLogo.png"));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("cadtLogo.png")));
         stage.setTitle("Cambodia Academy of Digital Technology");
         stage.setScene(scene);
         stage.show();
