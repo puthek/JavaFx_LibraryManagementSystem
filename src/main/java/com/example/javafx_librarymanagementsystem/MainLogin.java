@@ -6,10 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-//import java.awt.*;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class MainLogin extends Application {
     @Override
     public void start(Stage stage) throws Exception {
@@ -20,7 +16,6 @@ public class MainLogin extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
     public static void main(String[] args) {
         launch(args);
     }

@@ -8,14 +8,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com">
    <top>
-      <AnchorPane prefHeight="73.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: #283593;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="109.0" layoutY="26.0" text="Welcome to CADT Library" textFill="#161b67">
+            <Label layoutX="47.0" layoutY="10.0" text="Welcome to CADT Library" textFill="WHITE">
                <font>
-                  <Font name="Algerian" size="29.0" />
+                  <Font name="Arial Black" size="36.0" />
                </font>
             </Label>
          </children>
@@ -24,34 +23,43 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="97.0" fitWidth="130.0" layoutX="96.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="123.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Read Book" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="424.0" layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Add Book" textFill="#fffbfb">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="117.0" layoutY="384.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Borrow Book" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Button>
+            <Button layoutX="426.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Return Book" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="136.0" fitWidth="182.0" layoutX="70.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@readbook.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="123.0" fitWidth="125.0" layoutX="368.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@add.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="124.0" layoutY="116.0" mnemonicParsing="false" text="Read Book" />
-            <Button layoutX="395.0" layoutY="115.0" mnemonicParsing="false" text="Add Book">
-               <font>
-                  <Font name="Arial" size="13.0" />
-               </font>
-            </Button>
-            <ImageView fitHeight="101.0" fitWidth="137.0" layoutX="101.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="72.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@b.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="101.0" fitWidth="137.0" layoutX="379.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="165.0" layoutX="392.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@return.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="118.0" layoutY="268.0" mnemonicParsing="false" text="Borrow Book" />
-            <Button layoutX="389.0" layoutY="268.0" mnemonicParsing="false" text="Return Book" />
          </children>
       </AnchorPane>
    </center>
