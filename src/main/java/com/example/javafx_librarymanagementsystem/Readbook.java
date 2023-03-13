@@ -30,7 +30,7 @@ public class Readbook implements Initializable {
       //  fileChooser.setInitialDirectory(new File())
     }
     public void read(ActionEvent event) throws URISyntaxException, IOException {
-        System.out.println("Link click");
+        System.out.println("Link click open book ");
         //Desktop.getClass().browse(new URI("http://www.youtube.com"))
     }
 
