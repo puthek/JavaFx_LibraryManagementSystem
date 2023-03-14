@@ -137,7 +137,7 @@ public class LoginController implements Initializable {
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        showBooks();
+
     }
     public Connection getConnection() {
         Connection conn;
@@ -153,7 +153,7 @@ public class LoginController implements Initializable {
     public ObservableList<AddBooks> getBooksList1(){
         ObservableList<AddBooks> booksList = FXCollections.observableArrayList();
         Connection connection = getConnection();
-        String query = "SELECT * FROM books ";
+        String query = "SELECT * FROM add_book ";
         Statement st;
         ResultSet rs;
         try {
