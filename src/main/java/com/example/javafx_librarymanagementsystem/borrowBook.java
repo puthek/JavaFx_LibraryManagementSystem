@@ -1,5 +1,4 @@
 package com.example.javafx_librarymanagementsystem;
-public class borrowBookController {
-
+public class borrowBook {
 
 }

@@ -64,22 +64,59 @@ public class LoginController implements Initializable {
     }
     @FXML
     private void handleCancelButtonActionScene2(ActionEvent event)throws IOException{
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Log out");
-        alert.setHeaderText("you are about log out");
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void handleAddBooksButtonAction(ActionEvent event) throws IOException{
+
+    }
+    @FXML
+    private void handleBorrowBook(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void back3(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Library.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
         stage.toBack();
     }
+    @FXML
+    private void handleInsertButtonAction(ActionEvent event) throws IOException{
 
+    }
 
+    @FXML
+    private void sumimitAction(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+    }
 
+    @FXML
+    private void end3(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+        stage.close();
 
-
-
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
