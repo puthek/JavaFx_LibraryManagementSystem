@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -114,13 +115,13 @@ public class LoginController implements Initializable {
         stage.show();
     }
     @FXML
-    private void InsertButton() {
+    private void handleInsertButtonAction() {
         String query = "insert into books values("+idField.getText()+",'"+titleField.getText()+"','"+authorField.getText()+"',"+yearField.getText()+","+pagesField.getText()+")";
         executeQuery(query);
         showBooks();
     }
     @FXML
-    private void DeleteButton() {
+    private void handleDeleteButtonAction() {
         String query = "DELETE FROM books WHERE ID="+idField.getText()+"";
         executeQuery(query);
         showBooks();
@@ -134,10 +135,6 @@ public class LoginController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
     }
     public Connection getConnection() {
         Connection conn;
@@ -153,7 +150,7 @@ public class LoginController implements Initializable {
     public ObservableList<AddBooks> getBooksList1(){
         ObservableList<AddBooks> booksList = FXCollections.observableArrayList();
         Connection connection = getConnection();
-        String query = "SELECT * FROM add_book ";
+        String query = "SELECT * FROM books ";
         Statement st;
         ResultSet rs;
         try {
@@ -169,15 +166,35 @@ public class LoginController implements Initializable {
         }
         return booksList;
     }
-    private void showBooks() {
-        ObservableList<AddBooks> list = getBooksList1();
+    //
+    public void showBooks() {
+        ObservableList<AddBooks> booksList = FXCollections.observableArrayList();
+        Connection connection = getConnection();
+        String query = "SELECT * FROM books ";
+        Statement st;
+        ResultSet rs;
+        try {
+            st = connection.createStatement();
+            rs = st.executeQuery(query);
+            AddBooks addBooks;
 
-        idColumn.setCellValueFactory(new PropertyValueFactory<AddBooks,Integer>("id"));
-        titleColumn.setCellValueFactory(new PropertyValueFactory<AddBooks,String>("title"));
-        authorColumn.setCellValueFactory(new PropertyValueFactory<AddBooks,String>("author"));
-        yearColumn.setCellValueFactory(new PropertyValueFactory<AddBooks,Integer>("year"));
-        pagesColumn.setCellValueFactory(new PropertyValueFactory<AddBooks,Integer>("pages"));
+            while(rs.next()) {
+                addBooks = new AddBooks(rs.getInt("id"),rs.getString("title"), rs.getString("author"),rs.getInt("year"),rs.getInt("pages"));
+                booksList.add(addBooks);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
+        authorColumn.setCellValueFactory(new PropertyValueFactory<>("author"));
+        yearColumn.setCellValueFactory(new PropertyValueFactory<>("year"));
+        pagesColumn.setCellValueFactory(new PropertyValueFactory<>("pages"));
+        TableView.setItems(booksList);
+    }
 
-        TableView.setItems(list);}
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+    }
 }
