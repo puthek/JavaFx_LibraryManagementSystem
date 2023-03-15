@@ -53,8 +53,6 @@ public class LoginController implements Initializable {
     @FXML
     private void handleCancelButtonActionLogin(ActionEvent event)throws IOException{
 
-
-
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Login.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
@@ -76,6 +74,18 @@ public class LoginController implements Initializable {
     }
 
 
+    @FXML
+    private void borrowBookController(ActionEvent event)throws IOException{
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Cancel");
+        alert.setHeaderText("Register");
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+        stage.toBack();
+    }
 
 
 
