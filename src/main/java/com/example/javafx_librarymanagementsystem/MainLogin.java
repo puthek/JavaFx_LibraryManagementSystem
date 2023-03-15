@@ -23,4 +23,3 @@ public class MainLogin extends Application {
     }
 }
 
-
