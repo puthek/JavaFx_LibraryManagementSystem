@@ -75,10 +75,26 @@ public class LoginController implements Initializable {
         stage.toBack();
     }
 
+    @FXML
+    private void handleAddBooksButtonAction(ActionEvent event) throws IOException{
 
+    }
+    @FXML
+    private void handleBorrowBook(ActionEvent event) throws IOException{
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Log out");
+        alert.setHeaderText("you are about log out");
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+        stage.toBack();
+    }
+    @FXML
+    private void handleInsertButtonAction(ActionEvent event) throws IOException{
 
-
-
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
