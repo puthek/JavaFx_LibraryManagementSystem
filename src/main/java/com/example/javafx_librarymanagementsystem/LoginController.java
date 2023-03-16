@@ -1,5 +1,4 @@
 package com.example.javafx_librarymanagementsystem;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,112 +25,98 @@ public class LoginController implements Initializable {
     private PasswordField passwordField;
     private Stage stage;
     private Scene scene;
-
     @FXML
-    private void handleLoginButtonAction(ActionEvent event) throws IOException {
+    private void handleLoginButtonAction(ActionEvent event) throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Library.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
-    private void handleSignInButtonAction(ActionEvent event) throws IOException {
+    private void handleSignInButtonAction(ActionEvent event) throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
-    private void handleRegisterButtonAction(ActionEvent event) throws IOException {
+    private void handleRegisterButtonAction(ActionEvent event) throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Library.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
-    private void handleCancelButtonActionLogin(ActionEvent event) throws IOException {
+    private void handleCancelButtonActionLogin(ActionEvent event)throws IOException{
+
 
 
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
         stage.close();
     }
-
     @FXML
-    private void handleCancelButtonActionScene2(ActionEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Log out");
-        alert.setHeaderText("you are about log out");
+    private void handleCancelButtonActionScene2(ActionEvent event)throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader);
-        stage.setScene(scene);
-        stage.show();
-        stage.toBack();
-    }
-
-    @FXML
-    private void readBooks(ActionEvent event) throws IOException {
-
-
-        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Readbook.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
     }
+
     @FXML
-    private void Readbooknext(ActionEvent event) throws IOException {
+    private void handleAddBooksButtonAction(ActionEvent event) throws IOException{
 
-
-        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Readbooknext.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    }
+    @FXML
+    private void handleBorrowBook(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
     }
+
     @FXML
-    private void back(ActionEvent event) throws IOException {
+    private void back3(ActionEvent event) throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Library.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
         stage.toBack();
     }
     @FXML
-    private void back2(ActionEvent event) throws IOException {
-        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("readbook.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(fxmlLoader);
-        stage.setScene(scene);
-        stage.show();
-        stage.toBack();
+    private void handleInsertButtonAction(ActionEvent event) throws IOException{
+
     }
 
     @FXML
-    private void EndAction(ActionEvent event) throws IOException {
-        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("readbook.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    private void summitAction(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void end3(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook2.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
         stage.close();
+
     }
-
-
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 }

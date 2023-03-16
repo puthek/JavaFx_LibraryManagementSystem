@@ -48,12 +48,12 @@
             <Image url="@7.png" />
          </image>
       </ImageView>
-      <Button layoutX="14.0" layoutY="467.0" mnemonicParsing="false" onAction="#back2" text="Back" />
+      <Button layoutX="14.0" layoutY="467.0" mnemonicParsing="false" text="Back" />
       <Hyperlink layoutX="205.0" layoutY="278.0" text="Hyperlink" />
       <Hyperlink layoutX="205.0" layoutY="416.0" text="Hyperlink" />
       <Hyperlink layoutX="479.0" layoutY="137.0" text="Hyperlink" />
       <Hyperlink layoutX="479.0" layoutY="267.0" text="Hyperlink" />
       <Hyperlink layoutX="479.0" layoutY="416.0" text="Hyperlink" />
-      <Button layoutX="538.0" layoutY="467.0" mnemonicParsing="false" onAction="#EndAction" text="End" />
+      <Button layoutX="538.0" layoutY="467.0" mnemonicParsing="false"  text="End" />
    </children>
 </AnchorPane>

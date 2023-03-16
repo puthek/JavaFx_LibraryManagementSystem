@@ -35,7 +35,7 @@
             <TextField fx:id="yearField" layoutX="14.0" layoutY="215.0" />
             <TextField fx:id="pagesField" layoutX="14.0" layoutY="269.0" />
             <Button fx:id="InsertButton" layoutX="63.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleInsertButtonAction" text="Insert" />
-            <Button fx:id="DeleteButton" layoutX="63.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
+            <Button fx:id="DeleteButton" layoutX="63.0" layoutY="367.0" mnemonicParsing="false" text="Delete" />
          </children>
       </AnchorPane>
    </left>
