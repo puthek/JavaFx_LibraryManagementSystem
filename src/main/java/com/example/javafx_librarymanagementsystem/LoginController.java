@@ -116,6 +116,33 @@ public class LoginController implements Initializable {
         stage.close();
 
     }
+    @FXML
+    private void ReadBookButton(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Readbook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+    @FXML
+    private void back(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Library.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+    @FXML
+    private void next(ActionEvent event) throws IOException{
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Readbooknext.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }

@@ -46,7 +46,7 @@
             <Image url="@ec.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="534.0" layoutY="461.0" mnemonicParsing="false" onAction="#Readbooknext" text="Next" />
+      <Button layoutX="534.0" layoutY="461.0" mnemonicParsing="false" onAction="#next" text="Next" />
       <Button layoutX="468.0" layoutY="461.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <Label layoutX="124.0" layoutY="113.0" prefHeight="17.0" prefWidth="177.0" text="Book code C is a general-purpose  " />
       <Label layoutX="129.0" layoutY="137.0" prefHeight="17.0" prefWidth="167.0" text="programming language." />
