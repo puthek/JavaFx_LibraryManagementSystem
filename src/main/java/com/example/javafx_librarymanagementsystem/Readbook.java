@@ -10,7 +10,7 @@ import javafx.stage.FileChooser;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class  Readbook implements Initializable {
+public class Readbook implements Initializable {
 
     FileChooser fileChooser = new FileChooser();
     public void back(ActionEvent event) {
