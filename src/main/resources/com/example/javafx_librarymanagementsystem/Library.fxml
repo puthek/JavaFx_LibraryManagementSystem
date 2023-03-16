@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_librarymanagementsystem.LoginController">
    <top>
       <AnchorPane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: #283593;" BorderPane.alignment="CENTER">
          <children>
@@ -23,7 +23,7 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="123.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Read Book" textFill="#fffafa">
+            <Button layoutX="123.0" layoutY="167.0" mnemonicParsing="false" onAction="#readBooks" style="-fx-background-color: #283593;" text="Read Book" textFill="#fffafa">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
