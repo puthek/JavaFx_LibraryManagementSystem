@@ -1,5 +1,4 @@
 package com.example.javafx_librarymanagementsystem;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -99,7 +98,7 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void sumimitAction(ActionEvent event) throws IOException{
+    private void summitAction(ActionEvent event) throws IOException{
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("borrowBook2.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);

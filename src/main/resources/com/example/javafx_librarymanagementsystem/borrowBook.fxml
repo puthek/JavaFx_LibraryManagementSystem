@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_librarymanagementsystem.LoginController">
    <children>
-      <Button layoutX="476.0" layoutY="432.0" mnemonicParsing="false" onAction="#sumimitAction" prefHeight="25.0" prefWidth="75.0" text="Summit" textOverrun="CLIP" />
+      <Button layoutX="476.0" layoutY="432.0" mnemonicParsing="false" onAction="#summitAction" prefHeight="25.0" prefWidth="75.0" text="Summit" textOverrun="CLIP" />
       <Button cancelButton="true" graphicTextGap="5.0" layoutX="389.0" layoutY="432.0" mnemonicParsing="false" onAction="#back3" prefHeight="25.0" prefWidth="75.0" text="Cancel" textAlignment="CENTER" />
       <Text layoutX="46.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
       <Text layoutX="46.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
       <Text layoutX="46.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" />
       <Text layoutX="45.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrow Date" />
       <Text layoutX="46.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
-      <TextField layoutX="151.0" layoutY="182.0" opacity="0.42" prefHeight="25.0" prefWidth="201.0" text="name" />
-      <TextField layoutX="151.0" layoutY="223.0" opacity="0.42" prefHeight="25.0" prefWidth="201.0" text="username" />
-      <TextField layoutX="151.0" layoutY="266.0" opacity="0.42" prefHeight="25.0" prefWidth="201.0" text="\@gmail.com" />
-      <TextField layoutX="151.0" layoutY="307.0" opacity="0.42" prefHeight="25.0" prefWidth="201.0" text="book_Id" />
-      <DatePicker layoutX="151.0" layoutY="352.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField layoutX="151.0" layoutY="182.0" opacity="0.8" prefHeight="25.0" prefWidth="201.0" text="name" />
+      <TextField layoutX="151.0" layoutY="223.0" opacity="0.8" prefHeight="25.0" prefWidth="201.0" text="username" />
+      <TextField layoutX="151.0" layoutY="266.0" opacity="0.8" prefHeight="25.0" prefWidth="201.0" text="\@gmail.com" />
+      <TextField layoutX="151.0" layoutY="307.0" opacity="0.8" prefHeight="25.0" prefWidth="201.0" text="book_Id" />
       <ImageView fitHeight="205.0" fitWidth="229.0" layoutX="378.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@borrowB.jpg" />
          </image>
       </ImageView>
-      <VBox layoutX="194.0" layoutY="352.0" prefHeight="31.0" prefWidth="183.0">
-         <children>
-            <ButtonBar prefHeight="40.0" prefWidth="200.0" />
-         </children></VBox>
       <ImageView fitHeight="84.0" fitWidth="526.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@download.png" />
@@ -44,5 +37,6 @@
             <Font name="System Bold" size="37.0" />
          </font>
       </Text>
+      <DatePicker layoutX="151.0" layoutY="352.0" prefHeight="25.0" prefWidth="201.0" />
    </children>
 </AnchorPane>
