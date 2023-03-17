@@ -41,11 +41,10 @@
             <Label layoutX="57.0" layoutY="177.0" text="Date of Birth:" />
             <Label layoutX="57.0" layoutY="224.0" text="Email:" />
             <Label layoutX="57.0" layoutY="276.0" text="Password:" />
-            <TextField layoutX="195.0" layoutY="126.0" prefHeight="25.0" prefWidth="216.0" promptText="Username" />
-            <TextField layoutX="195.0" layoutY="173.0" prefHeight="25.0" prefWidth="215.0" promptText="mm/dd/yy" />
-            <TextField layoutX="195.0" layoutY="220.0" prefHeight="25.0" prefWidth="214.0" promptText="Email" />
-            <PasswordField layoutX="195.0" layoutY="272.0" prefHeight="25.0" prefWidth="215.0" promptText="Password" />
-            <Button layoutX="501.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleRegisterButtonAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #283593;" text="REGISTER" textFill="WHITE">
+            <TextField fx:id="username2Feild" layoutX="195.0" layoutY="126.0" prefHeight="25.0" prefWidth="216.0" promptText="Username" />
+            <TextField fx:id="email" layoutX="195.0" layoutY="220.0" prefHeight="25.0" prefWidth="214.0" promptText="Email" />
+            <PasswordField fx:id="password2Field" layoutX="195.0" layoutY="272.0" prefHeight="25.0" prefWidth="215.0" promptText="Password" />
+            <Button fx:id="register" layoutX="501.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleRegisterButtonAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #283593;" text="REGISTER" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Button>
@@ -53,7 +52,8 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <TextField layoutX="195.0" layoutY="80.0" prefHeight="25.0" prefWidth="216.0" promptText="Studnet/Admin" />
+            <TextField fx:id="studentAdmin" layoutX="195.0" layoutY="80.0" prefHeight="25.0" prefWidth="216.0" promptText="Studnet/Admin" />
+            <TextField fx:id="dateOfBirth" layoutX="195.0" layoutY="173.0" prefHeight="25.0" prefWidth="215.0" />
          </children>
       </AnchorPane>
    </center>

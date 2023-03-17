@@ -5,9 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 public class MainLogin extends Application {
-    private static LoginController Database;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainLogin.class.getResource("Login.fxml"));
@@ -21,4 +21,5 @@ public class MainLogin extends Application {
         launch(args);
     }
 }
+
 

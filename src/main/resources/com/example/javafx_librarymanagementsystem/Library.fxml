@@ -23,20 +23,20 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="123.0" layoutY="167.0" mnemonicParsing="false" onAction="#ReadBookButton" style="-fx-background-color: #283593;" text="Read Book" textFill="#fffafa">
+            <Button layoutX="107.0" layoutY="167.0" mnemonicParsing="false" onAction="#readBooks" style="-fx-background-color: #283593;" text="Type of Books" textFill="#fffafa">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="AddBooks" layoutX="424.0" layoutY="168.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Add Book" textFill="#fffbfb">
+            <Button fx:id="AddBooks" layoutX="424.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleAddBooksButtonAction" style="-fx-background-color: #283593;" text="Add Book" textFill="#fffbfb">
                <font>
-                  <Font name="Arial Bold" size="13.0" />
+                  <Font name="Arial Bold Italic" size="13.0" />
                </font>
             </Button>
-            <Button layoutX="117.0" layoutY="384.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Borrow Book" textFill="WHITE">
+            <Button fx:id="borrowBook" layoutX="117.0" layoutY="384.0" mnemonicParsing="false" onAction="#handleBorrowBookAction" style="-fx-background-color: #283593;" text="Borrow Book" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Italic" size="12.0" />
                </font></Button>
-            <Button layoutX="426.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: #283593;" text="Return Book" textFill="WHITE">
+            <Button layoutX="426.0" layoutY="385.0" mnemonicParsing="false" onAction="#ReturnBook" style="-fx-background-color: #283593;" text="Return Book" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>

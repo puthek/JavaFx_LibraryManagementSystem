@@ -24,18 +24,33 @@
    <left>
       <AnchorPane prefHeight="430.0" prefWidth="188.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="14.0" layoutY="42.0" text="ID Books" />
-            <Label layoutX="14.0" layoutY="94.0" text="Tile Books" />
-            <Label layoutX="14.0" layoutY="151.0" text="Authors" />
-            <Label layoutX="14.0" layoutY="198.0" text="Year" />
-            <Label layoutX="14.0" layoutY="252.0" text="Pages" />
+            <Label layoutX="14.0" layoutY="42.0" text="ID Books">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="94.0" text="Tile Books">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="151.0" text="Authors">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="198.0" text="Year">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="252.0" text="Pages">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <TextField fx:id="idField" layoutX="14.0" layoutY="59.0" />
             <TextField fx:id="titleField" layoutX="14.0" layoutY="111.0" />
             <TextField fx:id="authorField" layoutX="14.0" layoutY="168.0" />
             <TextField fx:id="yearField" layoutX="14.0" layoutY="215.0" />
             <TextField fx:id="pagesField" layoutX="14.0" layoutY="269.0" />
-            <Button fx:id="InsertButton" layoutX="63.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleInsertButtonAction" text="Insert" />
-            <Button fx:id="DeleteButton" layoutX="63.0" layoutY="367.0" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="InsertButton" layoutX="110.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleInsertButtonAction" prefHeight="25.0" prefWidth="64.0" text="Insert" />
+            <Button fx:id="DeleteButton" layoutX="15.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="25.0" prefWidth="63.0" text="Delete" />
          </children>
       </AnchorPane>
    </left>
@@ -51,6 +66,7 @@
                   <TableColumn fx:id="pagesColumn" prefWidth="75.0" text="Pages" />
               </columns>
             </TableView>
+            <Button fx:id="exitButton" layoutX="338.0" layoutY="391.0" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="25.0" prefWidth="47.0" text="Exit" />
          </children>
       </AnchorPane>
    </right>
